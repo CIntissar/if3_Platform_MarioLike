@@ -19,7 +19,7 @@ public class MovingMonster : Monster {// il hérite de "Monster" le script
         spriteR = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    virtual protected void Update()
     {
 
         //orientation de l'objet
@@ -41,7 +41,8 @@ public class MovingMonster : Monster {// il hérite de "Monster" le script
 
         Debug.DrawRay(start, direction * hitRange, Color.green);
         RaycastHit2D hit = Physics2D.Raycast(start, direction, hitRange); 
-        if(hit.collider != null )
+
+        if(hit.collider != null ) // si on touche!
         {
             speed.x *= -1;
         }
