@@ -5,11 +5,16 @@ using UnityEngine.Events;
 
 public class gotKey : MonoBehaviour
 {
+    public UnityEvent whenPickUp;
+
+
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.CompareTag("Key"))
+
+        if(other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            whenPickUp?.Invoke();  //non nullité de l'event
+            Destroy(gameObject);
         }
     }
 }
