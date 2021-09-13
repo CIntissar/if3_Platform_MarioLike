@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3863346558672447929}
   - component: {fileID: 7375354665507268271}
+  - component: {fileID: 7771091632069599552}
   m_Layer: 0
   m_Name: moving-enemy2
   m_TagString: Untagged
@@ -82,3 +83,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7771091632069599552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3288844861992703340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa045be6cac37df48b7f8c8a7094f2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: -1, y: 0}
+  flipX: 0
+  hitRange: 0.1
