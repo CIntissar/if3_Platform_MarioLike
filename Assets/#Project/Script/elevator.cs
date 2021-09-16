@@ -17,6 +17,7 @@ public class elevator : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             other.transform.parent = null;
+            DontDestroyOnLoad(LevelsManager.instance.player);
         }
     }
 }
